@@ -1,0 +1,6 @@
+.platform.tab-links{
+  max-width: 40em;
+}
+.platform.tab.active{
+  width: 9em;
+}

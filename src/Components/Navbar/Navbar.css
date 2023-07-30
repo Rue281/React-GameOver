@@ -1,0 +1,27 @@
+.navbar{
+    z-index: 1;
+}
+button.btn,.btn.signin, .btn.signup{
+    background: var(--btnBgColor);
+    
+    /* background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%); */
+    
+      color: var(--fontColor);
+      font-weight: bold;
+    }
+
+.btn.signin:hover, .btn.signup:hover, .btn.logout:hover{
+    border: 1px solid #fff;
+    transition: all 0.5s;
+    }
+
+.navbar-brand,.navbar-nav .nav-link{
+        color: var(--fontColor);
+    }
+
+.navbar-nav .nav-link.active{
+    color: var(--activeFontColor);
+    font-weight: bold;
+}
+
+

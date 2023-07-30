@@ -1,0 +1,16 @@
+/* Mobile devices */
+@media screen and (max-width: 480px){
+}
+/* iPads, Tablets */
+@media screen and (max-width: 768px){
+}
+/* Small screens, laptops */
+@media screen and (max-width: 1024px){
+}
+/* Desktops, large screens */
+@media screen and (max-width: 1200px){
+}
+/*  Extra large screens, TV */
+@media screen and (min-width: 1201px){
+    /* .card{height: 400px;} */
+}

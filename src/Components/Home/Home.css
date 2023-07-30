@@ -1,0 +1,41 @@
+.home-container{
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('../../assets/banner.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    background: #000;
+    position: absolute;
+}
+.text{
+    max-width: 50%;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.text h3,.text p{
+    font-weight: 600;
+    font-size: x-large;
+}
+h1{
+    font-weight: bolder;
+    font-size: xxx-large;
+}
+.registerBtn{
+    font-size: x-large;
+    transition: all 0.5s;
+}
+.registerBtn:hover{
+    border: 1px solid var(--fontColor);
+}

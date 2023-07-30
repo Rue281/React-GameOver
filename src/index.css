@@ -1,13 +1,14 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+  --btnBgColor: radial-gradient(circle, rgba(181,105,177,0.9836309523809523) 0%, rgba(79,8,85,0.3841911764705882) 100%);
+  --fontColor: #fff;
+  --activeFontColor: rgb(181,105,177);
+  --fontFamily: 'Monda', sans-serif;
+  --bgColor: linear-gradient(241deg, rgba(20,19,50,1) 0%, rgba(76,65,119,1) 100%);
+}
+body{
+  font-family: var(--fontFamily);
+  color:var(--fontColor);
+  background: var(--bgColor);
 }
