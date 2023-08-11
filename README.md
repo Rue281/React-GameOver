@@ -4,6 +4,13 @@ a gaming-website that allows users to get authenticated to display games and fet
 user can view game details such as description, category and other additional info.
 animation is created by Framer motion animation library.
 
+![Screenshot from 2023-08-12 00-50-44](https://github.com/Rue281/React-GameOver/assets/22898745/06a649a6-8c9e-4a05-8ad1-13ecc0ab8e86)
+
+![Screenshot from 2023-08-12 00-51-02](https://github.com/Rue281/React-GameOver/assets/22898745/8aadf52a-c5c9-4f61-8856-a44cb9f0b13b)
+
+![Screenshot from 2023-08-12 01-03-40](https://github.com/Rue281/React-GameOver/assets/22898745/2f62e0f8-1ddc-4636-8c81-6ffaf9d65aa2)
+
+
 
 ### Technologies Used
 
@@ -20,7 +27,7 @@ animation is created by Framer motion animation library.
 
 - APIs source: [The Rapid API hub](https://rapidapi.com/hub)
 - Fonts: [Google Fonts](https://fonts.google.com/)
-- Animation: [Framer Motion](https://www.framer.com/motion/)
+- Animation: [Framer Motion](https://www.framer.com/motion/) , [React-id-swiper](https://react-id-swiper.ashernguyen.site/)
 
 
 # Getting Started with Create React App
