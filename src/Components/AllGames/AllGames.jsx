@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { motion } from "framer-motion";
 import './AllGames.css'
-import './AllGamesResponsive.css'
+// import './AllGamesResponsive.css'
 import {getGameDetails} from '../../utils.js'
 // import {useFetchGameDetails} from '../../utils.js'
 import {NavLink, useNavigate } from 'react-router-dom'
@@ -66,11 +66,9 @@ export default function AllGames({userData}) {
           exit={cardDefaultState}
           
           >
-            <NavLink to="/gameDetails" onClick={()=>{
-            getGameDetails(item.id)
-          }}>
+            <NavLink to={"/gameDetails/"+item.id} className="card">
             <img className='rounded-3' src={item.thumbnail} alt="view of mountain" />
-            <div className="info">
+            <div className="info layer">
               <h3>{`${item.title}`}</h3>
             </div>
             </NavLink>

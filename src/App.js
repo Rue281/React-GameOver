@@ -55,7 +55,7 @@ export default function App() {
 
   let routes = createBrowserRouter([
     {path:"/",element:<Layout userData = {userData} logout = {logout}/>,children:[
-      {index:true,element:<Home/>},
+      {index:true,element:<Home userData = {userData}/>},
       {path:"allGames",element:<ProtectedRouting><AllGames userData = {userData}/></ProtectedRouting>},
       {path:"allPlatforms",element:<ProtectedRouting><AllPlatforms platformsTabs={platformsTabs}/></ProtectedRouting>},
       {path:"allCategories",element:<ProtectedRouting><AllCategories tabs={tabs}/></ProtectedRouting>},
@@ -63,6 +63,7 @@ export default function App() {
       {path:"releaseDateSort",element:<ProtectedRouting><ReleaseDateSort/></ProtectedRouting>},
       {path:"popularitySort",element:<ProtectedRouting><PopularitySort/></ProtectedRouting>},
       {path:"alphabeticalSort",element:<ProtectedRouting><AlphabeticalSort/></ProtectedRouting>},
+      {path:"gameDetails/:id",element:<ProtectedRouting><GameDetails/></ProtectedRouting>},
       {path:"gameDetails",element:<ProtectedRouting><GameDetails/></ProtectedRouting>},
       {path:"*",element:<NotFound/>},
       {path:"signup",element:<Signup saveUserData = {saveUserData}/>},
@@ -70,6 +71,24 @@ export default function App() {
       {path:"forgetPassword",element:<Forgetpassword/>},
       {path:"resetPassword",element:<ResetPassword/>}
     ]}
+
+    
+    // {path:"/",element:<Layout userData = {userData} logout = {logout}/>,children:[
+    //   {index:true,element:<Home/>},
+    //   {path:"allGames",element:<AllGames userData = {userData}/>},
+    //   {path:"allPlatforms",element:<AllPlatforms platformsTabs={platformsTabs}/>},
+    //   {path:"allCategories",element:<AllCategories tabs={tabs}/>},
+    //   {path:"relevanceSort",element:<RelevanceSort/>},
+    //   {path:"releaseDateSort",element:<ReleaseDateSort/>},
+    //   {path:"popularitySort",element:<PopularitySort/>},
+    //   {path:"alphabeticalSort",element:<AlphabeticalSort/>},
+    //   {path:"gameDetails/:id",element:<GameDetails/>},
+    //   {path:"*",element:<NotFound/>},
+    //   {path:"signup",element:<Signup saveUserData = {saveUserData}/>},
+    //   {path:"signin",element:<Signin saveUserData = {saveUserData}/>},
+    //   {path:"forgetPassword",element:<Forgetpassword/>},
+    //   {path:"resetPassword",element:<ResetPassword/>}
+    // ]}
   ])
   return (
     <RouterProvider router={routes}/>

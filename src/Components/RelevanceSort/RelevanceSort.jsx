@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { motion } from "framer-motion";
 import './RelevanceSort.css'
+import { NavLink } from 'react-router-dom';
 
 export default function RelevanceSort({active}) {
   let [gamesList,setGamesList] = useState([]);
@@ -83,10 +84,12 @@ export default function RelevanceSort({active}) {
             }}}
           initial={cardDefaultState}
           exit={cardDefaultState}>
+            <NavLink to={"/gameDetails/"+item.id} className="card">
             <img className='rounded-3' src={item.thumbnail} alt="view of mountain" />
-            <div className="info">
+            <div className="info layer">
               <h3>{`${item.title}`}</h3>
             </div>
+            </NavLink>
           </motion.div>
         ))}
       </div>
