@@ -1,3 +1,12 @@
 .swiper-container{
     margin-bottom: 5rem;
 }
+.playBtn:active{
+    color:var(--fontColor) !important;
+}
+.playBtn:hover{
+    color:var(--fontColor);
+}
+.playBtn:hover{
+    border: 1px solid var(--fontColor);
+}

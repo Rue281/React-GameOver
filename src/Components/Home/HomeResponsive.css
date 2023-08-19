@@ -1,5 +1,8 @@
 /* Mobile devices */
 @media screen and (max-width: 480px){
+    .navbar-nav li{
+        margin-bottom: 0.5em;
+    }
     .text h3,.text p{
         font-weight: 600;
         font-size: medium;
@@ -7,5 +10,8 @@
     h1{
         font-weight: bolder;
         font-size: large;
+    }
+    .registerBtn{
+        font-size: 1em;
     }
 }

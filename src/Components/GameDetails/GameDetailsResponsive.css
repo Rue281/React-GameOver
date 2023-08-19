@@ -1,0 +1,6 @@
+/* Mobile devices */
+@media screen and (max-width: 480px){
+    .playBtn{
+        margin: 0.5em 0;
+    }
+}

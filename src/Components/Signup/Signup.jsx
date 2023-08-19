@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import * as Yup from 'yup'
 
-export default function Signup(saveUserData = {saveUserData}) {
+export default function Signup({saveUserData}) {
   console.log(saveUserData);
   // let baseUrl = "https://route-ecommerce-app.vercel.app";
   let baseUrl = "https://ecommerce.routemisr.com";

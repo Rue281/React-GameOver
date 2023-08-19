@@ -1,8 +1,9 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import CoverflowEffect from './CoverflowEffect';
 import './GameDetails.css'
+import './GameDetailsResponsive.css'
 
 export default function GameDetails() {
   //to recieve id from url
@@ -47,7 +48,13 @@ export default function GameDetails() {
       {gameDetails? <>
         <div className="col-md-4">
           <img src={gameDetails.thumbnail} alt="game banner"/>
-          <button className='btn rounded-pill mt-3'>Play now</button>
+          <Link to={gameDetails.game_url} target='_blank' className='gameWebsite'>
+            <button className='playBtn btn rounded-pill mt-3'>
+              Play now
+            </button>
+          </Link>
+          
+          
         </div>
         <div className="col-md-8">
           <h1>{gameDetails.title}</h1>
