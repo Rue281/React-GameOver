@@ -1,0 +1,26 @@
+/* Mobile devices */
+@media screen and (max-width: 480px){
+    .tab-links{
+        flex-direction: column;
+    }
+    .tab a{
+        padding: 0.2em 0.5em;
+    }
+}
+/*481px — 768px: iPads, Tablets*/
+@media screen and (max-width: 768px)and (min-width: 481px){
+    .tab {
+        padding: 0 0 0.2em;
+      }
+    .tab span{
+        font-size: 0.5em;
+    }
+    .tab a{
+        padding: 0.2em 0.5em;
+        font-size: 1.5em;
+    }
+    .tab.active{
+        width: 9em; 
+        padding: 0.5em 0.5em;
+    }
+}

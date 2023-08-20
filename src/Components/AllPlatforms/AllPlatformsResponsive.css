@@ -1,0 +1,6 @@
+/* Mobile devices */
+@media screen and (max-width: 480px){
+    .platform.tab-links{
+        flex-direction: row;
+      }
+}

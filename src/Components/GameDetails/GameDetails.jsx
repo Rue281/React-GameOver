@@ -46,8 +46,11 @@ export default function GameDetails() {
     <div className="row">
       
       {gameDetails? <>
-        <div className="col-md-4">
-          <img src={gameDetails.thumbnail} alt="game banner"/>
+        <div className="col-md-3">
+          <div className="banner">
+          <img className='w-100' src={gameDetails.thumbnail} alt="game banner"/>
+          </div>
+          
           <Link to={gameDetails.game_url} target='_blank' className='gameWebsite'>
             <button className='playBtn btn rounded-pill mt-3'>
               Play now

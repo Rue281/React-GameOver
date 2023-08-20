@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from 'react'
 import cn from "classnames"; 
 import './AllPlatforms.css'
+import './AllPlatformsResponsive.css'
 import { motion } from "framer-motion";
 
 export default function AllPlatforms({ platformsTabs, defaultIndex = 0 }) {

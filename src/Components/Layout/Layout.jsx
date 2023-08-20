@@ -6,7 +6,7 @@ export default function Layout({userData, logout}) {
   return (
     <div>
       <Navbar userData = {userData} logout = {logout}/>
-      <div className="container">
+      <div className="container-fluid">
         <Outlet/>
       </div>
     </div>

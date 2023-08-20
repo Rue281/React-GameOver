@@ -59,8 +59,8 @@
   
   .tab.active {
     border-radius: 50rem;
-    /* width: 9em; */
-    /* padding: 0.5em 0.5em; */
+    /* width: 9em; 
+    padding: 0.5em 0.5em; */
     background: var(--btnBgColor);
     /*transition for bg is not working as expected*/
     transition: all 2s ease-in;
@@ -70,10 +70,10 @@
     transition: color 0.6s ease-in;
   }
   .tab a {
-    padding: 0.2em 0.5em;
+    
     display: flex;
     align-items: center;
-    font-size: 20px;
+    font-size: 1em;
     overflow: hidden;
     position: relative;
   }

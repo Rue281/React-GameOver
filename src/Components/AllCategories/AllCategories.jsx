@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from 'react'
 import cn from "classnames"; 
 import './AllCategories.css'
+import './AllCategoriesResponsive.css'
 import { motion } from "framer-motion";
 
 export default function AllCategories({ tabs, defaultIndex = 0 }) {
@@ -60,20 +61,20 @@ export default function AllCategories({ tabs, defaultIndex = 0 }) {
     }
   };
   return (
-    <div>
+    
       <div className="tabs-component pt-5">
-    <ul className="tab-links" role="tablist">
+    <ul className="tab-links row" role="tablist">
       {tabs.map((tab, index) => (
         <motion.li
           key={tab.id}
-          className={cn("tab", { active: activeTabIndex === index })}
+          className={cn("tab col-md-1 col-sm-4", { active: activeTabIndex === index })}
           role="presentation"
           // variants={tabVariant}
           // animate={activeTabIndex === index ? "active" : "inactive"}
         >
           <a href={`#${tab.id}`} onClick={() => onTabClick(index)}>
             {tab.icon}
-            <motion.span variants={tabTextVariant}>{tab.title}</motion.span>
+            <motion.span variants={tabTextVariant} className='tab-title'>{tab.title}</motion.span>
           </a>
         </motion.li>
       ))}
@@ -91,6 +92,6 @@ export default function AllCategories({ tabs, defaultIndex = 0 }) {
 			/>
     ))}
   </div>
-    </div>
+    
   )
 }
