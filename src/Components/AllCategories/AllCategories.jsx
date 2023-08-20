@@ -73,7 +73,7 @@ export default function AllCategories({ tabs, defaultIndex = 0 }) {
           // animate={activeTabIndex === index ? "active" : "inactive"}
         >
           <a href={`#${tab.id}`} onClick={() => onTabClick(index)}>
-            {tab.icon}
+            
             <motion.span variants={tabTextVariant} className='tab-title'>{tab.title}</motion.span>
           </a>
         </motion.li>

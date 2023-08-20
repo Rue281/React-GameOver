@@ -19,7 +19,7 @@ export default function Signup({saveUserData}) {
     // last_name: Yup.string().required("Last Name is required").min(2,"min chars is 2").max(10,"max chars is 10"),
     email: Yup.string().email("please enter a valid email").required(),
     phone: Yup.string().required().matches(/^(012|015|011|010)[0-9]{8}$/gm,"please enter a valid phone number"),
-    password: Yup.string().required().matches(/^[A-Z][a-z0-9-_%$#@!^&*()]{2,8}$/,"passowrd must start with a capital letter and 2-8 chars").required(),
+    password: Yup.string().required().matches(/^[A-Z][a-z0-9-_%$#@!^&*()]{5,8}$/,"passowrd must start with a capital letter and 5-8 chars").required(),
     rePassword: Yup.string().required().oneOf([Yup.ref("password")],"Re-password is not matched")
   });
 
